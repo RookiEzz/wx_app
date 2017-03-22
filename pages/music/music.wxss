@@ -1,0 +1,30 @@
+/* pages/music/music.wxss */
+.music_wall{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container .one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: red;
+  margin-top: 1em;
+}
+.title{
+  font-size: 13px;
+  color:#ccc;
+  padding:1em;
+}
+.forward{
+  font-size: 14px;
+  text-indent: 2em;
+  padding: 0 2em;
+  line-height: 25px;
+  color: aquamarine;
+  margin-top: 10px;
+}

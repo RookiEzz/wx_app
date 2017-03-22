@@ -1,0 +1,11 @@
+<!--pages/music/music.wxml-->
+<view class='container'>
+<view class="one" wx:for="{{list}}" wx:key="{{index}}">
+   
+    <text class="title">{{item.title}}</text>
+    <text class="author">文/{{item.author.user_name}}</text>
+    <image class='music_wall' src="{{item.img_url}}"></image>
+    <text class='forward'>{{item.forward}}</text> 
+    <text class='like'>{{item.like_count}}</text>
+</view>
+</view>

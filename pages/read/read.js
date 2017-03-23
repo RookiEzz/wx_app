@@ -1,6 +1,10 @@
 // pages/read/read.js
 Page({
-  data:{},
+  data:{
+    htmlcontent:'<view class="div"><text>按照往常的惯例，美国最老牌的媒体《纽约时报》此前选出了今年在银幕上表现最突出的演员，并为他们拍摄了九部短片。之前这个系列中有大家比较熟知的“一分钟模仿表演”和“九个吻”。</text></view>'
+
+
+  },
   list:[],
   onLoad:function(options){
     var that = this;

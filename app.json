@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/read/read",
     "pages/music/music",
-    "pages/movie/movie"
+    "pages/movie/movie",
+    "pages/readDetail/readDetail",
+    "pages/musicDetail/musicDetail",
+    "pages/movieDetail/movieDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

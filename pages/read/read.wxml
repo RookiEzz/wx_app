@@ -9,3 +9,4 @@
     <text class='like'>{{item.like_count}}</text>
 </view>
 </view>
+{{htmlcontent}}

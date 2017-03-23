@@ -1,5 +1,5 @@
 <!--pages/movieDetail/movieDetail.wxml-->
-
+<import src="../../wxParse/wxParse.wxml"/>
 <view>
 
 
@@ -15,5 +15,6 @@
 <text>{{movie.title}}</text>
 <view class='line'></view>
 <text class="author">文/{{movie.author_list[0].user_name}}</text>
-<template is="html2Wxml" data="{{innerHTML}}"></template>
+ <view class="article"><template is="wxParse" data="{{wxParseData:article.nodes}}"/></view>
+
 </view>

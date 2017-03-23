@@ -1,4 +1,5 @@
 /* pages/movieDetail/movieDetail.wxss */
+@import "../../wxParse/wxParse.wxss";
 
 view{
     display: flex;
@@ -24,4 +25,9 @@ swiper{
     height: 3px;
     width: 4rem;
     background:black;
+}
+.article{
+    font-size:13px;
+    line-height: 20px;
+    text-indent: 2em;
 }

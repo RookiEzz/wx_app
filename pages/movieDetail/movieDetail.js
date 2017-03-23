@@ -1,5 +1,5 @@
 // pages/movieDetail/movieDetail.js
-import {html2wxml} from '../../src/htmltowxml';
+var WxParse = require('../../wxParse/wxParse.js');
 Page({
   data:{
     id:'',
@@ -12,7 +12,7 @@ Page({
     duration: 1000,
     circular:true,
     mode: 'scaleToFill',
-    innerHTML: ''
+    article: []
   },
   
   onLoad:function(option){
@@ -22,16 +22,13 @@ Page({
     wx.request({
       url: url,
       success: function(res){
-       
-         res.data.data.data[0].content.replace(/\n/g, " ")    
-          res.data.data.data[0].content.replace(/\r/g, " ")
-         
-       var content = res.data.data.data[0].content
+       var article = res.data.data.data[0].content
+       console.log(url)
         that.setData({
           movie:res.data.data.data[0],
-          innerHTML: html2wxml(content)
+          article: WxParse.wxParse('article', 'html', article, that, 5)
         })
-        console.log(html2wxml(content))
+      
       },
       fail: function() {
         // fail

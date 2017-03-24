@@ -22,6 +22,28 @@ Page({
       }
     }) 
   },
+  detail: function(e){
+    console.log('enter')
+
+ var id = e.currentTarget.dataset.data.item_id  
+ var url='../movieDetail/movieDetail?id='+id;
+  
+    
+    console.log(url)
+    wx.navigateTo({
+      url: url,
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    console.log(1)
+  },
   onReady:function(){
     // 页面渲染完成
   },

@@ -1,1 +1,6 @@
-{}
+{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一个影视",
+    "navigationBarTextStyle":"black"
+  }

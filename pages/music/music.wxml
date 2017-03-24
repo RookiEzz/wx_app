@@ -1,11 +1,16 @@
 <!--pages/music/music.wxml-->
 <view class='container'>
-<view class="one" wx:for="{{list}}" wx:key="{{index}}">
-   
+<view class="one" wx:for="{{list}}" wx:key="{{index}}" bindtap='detail' data-id="{{item.item_id}}">
+   <text class='cate'>-音乐-</text>
     <text class="title">{{item.title}}</text>
-    <text class="author">文/{{item.author.user_name}}</text>
-    <image class='music_wall' src="{{item.img_url}}"></image>
-    <text class='forward'>{{item.forward}}</text> 
-    <text class='like'>{{item.like_count}}</text>
+    <text class="author">文 / {{item.author.user_name}}</text>
+    <image wx:if="{{current==index}}" catchtap="play" class='{{classname}} music_wall' src="{{item.img_url}}" data-index="{{index}}"></image>
+    <image wx:else bindtap="play" class='music_wall' src="{{item.img_url}}" data-index="{{index}}"></image>
+    <text class='forward'>{{item.forward}}</text>
+    <view class='zan'>
+        <text class='like'>{{item.like_count}}  </text>
+    <image style="width:15px; height:15px; margin-left:5px" src="../../utils/img/like.png"></image>
+    </view> 
+    
 </view>
 </view>

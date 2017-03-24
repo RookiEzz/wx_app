@@ -23,7 +23,7 @@ Page({
       url: url,
       success: function(res){
        var article = res.data.data.data[0].content
-       console.log(url)
+       console.log(article)
         that.setData({
           movie:res.data.data.data[0],
           article: WxParse.wxParse('article', 'html', article, that, 5)
@@ -42,7 +42,7 @@ Page({
       url: url_img,
       
       success: function(res){
-        console.log(res.data.data.title)
+        
         that.setData({
           imgUrls: res.data.data.photo,
           movieName: res.data.data.title

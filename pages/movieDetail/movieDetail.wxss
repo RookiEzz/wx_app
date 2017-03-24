@@ -5,6 +5,7 @@ view{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "微软雅黑"
 }
 .swiper-item{
     width: 100%;
@@ -30,4 +31,12 @@ swiper{
     font-size:13px;
     line-height: 20px;
     text-indent: 2em;
+}
+.wxParse-inline{
+    width:320px;
+    padding:10px 0;
+}
+.wxParse-strong{
+    text-align:center;
+    text-indent: 0;
 }

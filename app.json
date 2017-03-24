@@ -17,16 +17,24 @@
    "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页"
+      "text": "首页",
+      "iconPath": "utils/img/index-not.png",
+      "selectedIconPath": "utils/img/index-selected.png"
     }, {
       "pagePath": "pages/read/read",
-      "text": "阅读"
+      "text": "阅读",
+       "iconPath": "utils/img/read-not.png",
+      "selectedIconPath": "utils/img/read-selected.png"
     }, {
       "pagePath": "pages/music/music",
-      "text": "音乐"
+      "text": "音乐",
+       "iconPath": "utils/img/music-no.png",
+      "selectedIconPath": "utils/img/music-selected.png"
     },{
       "pagePath": "pages/movie/movie",
-      "text": "影视"
+      "text": "影视",
+       "iconPath": "utils/img/movie-not.png",
+      "selectedIconPath": "utils/img/movie-selected.png"
     }]
   }
 }

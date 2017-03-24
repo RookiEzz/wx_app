@@ -28,6 +28,24 @@ Page({
       }
     })
   },
+  detail: function(e){
+    var id = e.currentTarget.dataset.id;
+    var url='../readDetail/readDetail?id='+id;
+    console.log(url)
+    wx.navigateTo({
+      url: url,
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+    console.log(1)
+  },
   onReady:function(){
     // 页面渲染完成
   },

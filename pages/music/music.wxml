@@ -1,6 +1,8 @@
 <!--pages/music/music.wxml-->
 <view class='container'>
+<audio  src="{{src}}" id="myAudio" ></audio>
 <view class="one" wx:for="{{list}}" wx:key="{{index}}" bindtap='detail' data-id="{{item.item_id}}">
+
    <text class='cate'>-音乐-</text>
     <text class="title">{{item.title}}</text>
     <text class="author">文 / {{item.author.user_name}}</text>
